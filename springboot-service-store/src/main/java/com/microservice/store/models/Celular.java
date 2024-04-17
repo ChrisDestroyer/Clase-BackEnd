@@ -11,6 +11,14 @@ public class Celular {
 	private String marca;
 	
 	private Date createAt;
+	
+	private Integer port;
+	
+	public Celular(Long id, String name, String marca) {
+		this.id = id;
+		this.name = name;
+		this.marca = marca;
+	}
 
 	public Long getId() {
 		return id;
@@ -42,6 +50,14 @@ public class Celular {
 
 	public void setCreateAt(Date createAt) {
 		this.createAt = createAt;
+	}
+
+	public Integer getPort() {
+		return port;
+	}
+
+	public void setPort(Integer port) {
+		this.port = port;
 	}
 	
 	
